@@ -1,0 +1,104 @@
+body {
+  margin: 0px;
+}
+main {
+  margin-left: 20px; /* Lägger till vänstermarginal */
+  margin-right: 20px; /* Lägger till högermarginal */
+}
+h1 {
+  text-align: center; /* Centrera rubriker */
+}
+
+/* Navigationsbarens stil */
+.navbar ul {
+  list-style-type: none;
+  background-color: hsl(0, 0%, 25%);
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+.navbar a {
+  color: white; /* Textfärg vit */
+  text-decoration: none; /* Tar bort understrykning */
+  padding: 15px; /* Lägger till padding */
+  display: block; /* Gör blockelement */
+  text-align: center; /* Centrerar texten */
+}
+/* Bakgrundsfärg vid hover */
+.navbar a:hover {
+  background-color: hsl(0, 0%, 10%);
+}
+/* Gör så att listan flyter till vänster */
+.navbar li {
+  float: left;
+}
+/* Stil för sociala ikoner */
+.social-icon {
+  font-size: 24px; /* Storlek på ikoner */
+  color: #333; /* Färg på ikoner */
+  margin-right: 10px; /* Marginal mellan ikoner */
+  text-decoration: none; /* Ingen understrykning */
+}
+/* Färg vid hover */
+.social-icon:hover {
+  color: #007bff;
+}
+/* Nyhetsbrevsektionens stil */
+.newsletter {
+  background-color: #f8f8f8; /* Ljus bakgrundsfärg */
+  padding: 40px 20px; /* Padding på toppen och botten, samt på sidorna */
+  text-align: center; /* Centrera texten */
+  margin-top: 40px; /* Marginal ovanför sektionen */
+  border-radius: 8px; /* Rundar hörnen */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lägger till skugga */
+}
+
+.newsletter h2 {
+  color: #2c3e50; /* Rubrikens färg */
+  margin-bottom: 20px; /* Marginal under rubriken */
+  font-size: 1.8em; /* Större teckenstorlek */
+}
+/* Stil för nyhetsbrevsformuläret */
+.newsletter form {
+  display: flex; /* Använd flexbox för layout */
+  justify-content: center; /* Centrera innehållet horisontellt */
+  max-width: 500px; /* Maximal bredd på formuläret */
+  margin: 0 auto;
+}
+
+.newsletter input[type="email"] {
+  flex-grow: 1; /* Gör att inputfältet växer */
+  padding: 10px 15px; /* Padding inuti inputfältet */
+  border: 1px solid #ddd; /* Lägger till en grå kant */
+  border-radius: 4px 0 0 4px; /* Rundar hörnen på vänster sida */
+  font-size: 16px; /* Teckenstorlek för input */
+}
+
+.newsletter button {
+  background-color: #3498db; /* Bakgrundsfärg för knappen */
+  color: white; /* Textfärg vit */
+  border: none; /* Ingen kantlinje */
+  padding: 10px 20px; /* Padding inuti knappen */
+  border-radius: 0 4px 4px 0; /* Rundar hörnen på höger sida */
+  cursor: pointer; /* Ändrar muspekaren till hand */
+  transition: background-color 0.3s ease; /* Lägger till övergångseffekt */
+  font-size: 16px; /* Teckenstorlek för knappen */
+}
+
+.newsletter button:hover {
+  background-color: #2980b9; /* Bakgrundsfärg vid hover */
+}
+
+/* Responsiv design för mindre skärmar */
+@media screen and (max-width: 480px) {
+  .newsletter form {
+    flex-direction: column;
+  }
+
+  .newsletter input[type="email"],
+  .newsletter button {
+    width: 100%; /* Gör att elementen tar upp hela bredden */
+    margin-bottom: 10px; /* Marginal under elementen */
+    border-radius: 4px; /* Rundar hörnen */
+  }
+}
